@@ -1,0 +1,19 @@
+{
+  "name": "classes",
+  "version": "1.0.0",
+  "description": "A cheatsheet for working with classes",
+  "main": "classes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniledev/classes-cheatsheet.git"
+  },
+  "author": "Elina McGill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniledev/classes-cheatsheet/issues"
+  },
+  "homepage": "https://github.com/aniledev/classes-cheatsheet#readme"
+}
