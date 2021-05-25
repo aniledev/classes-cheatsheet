@@ -59,4 +59,29 @@ class Vehicle {
 
 const corrola = new Vehicle("Toyota", "Corrola", "red");
 console.log(corrola);
-const 
+const newVehiclePrice = corrola.takePriceDiscount(300);
+console.log(newVehiclePrice);
+
+// with inheritance, you can create a parent class with properties and methods that multiple child classes share
+// create a parent class with the shared properties name & behavior, and shared methods incrementBehavior()
+// create a child class Dog that shares all the same properties and methods of the parent Animal class
+// create a child class Cat that includes name, behavior, usesLitter properties and the incrementBehavior() method
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+    this._behavior = behavior;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get behavior() {
+    return this._behavior;
+  }
+
+  incrementBehavior() {
+    this._behavior++;
+  }
+}
