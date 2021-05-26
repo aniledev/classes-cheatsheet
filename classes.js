@@ -97,6 +97,10 @@ class Cat extends Animal {
     super(name);
     this._usesLitter = usesLitter;
   }
+
+  get usesLitter() {
+    return this._useLitter;
+  }
 }
 
 const catFelix = new Cat("Felix", true);
