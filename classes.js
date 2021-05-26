@@ -109,3 +109,22 @@ catFelix.incrementBehavior();
 const catFelixBehavior = catFelix.behavior;
 console.log(catFelixBehavior);
 console.log(catFelix);
+
+// using static methods: static methods cannot be accessed from instances of the parent class or instances of the subclasses
+class Pet extends Animal {
+  constructor(name) {
+    super(name);
+  }
+
+  static generateName() {
+    const names = ["Angel", "Spike", "Buffy", "Willow", "Tara"];
+    const randomIndex = Math.floor(Math.random() * 5);
+    return names[randomIndex];
+  }
+}
+
+const petName = Pet.generateName();
+console.log(petName);
+const felix = new Pet("Felix");
+const felixName = felix.generateName(); // TypeError felix.generateName is not a function
+// this is because generateName() is a static method that is only accessed by the parent class
