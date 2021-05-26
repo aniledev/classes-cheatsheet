@@ -70,7 +70,7 @@ console.log(newVehiclePrice);
 class Animal {
   constructor(name) {
     this._name = name;
-    this._behavior = behavior;
+    this._behavior = 0;
   }
 
   get name() {
@@ -85,3 +85,23 @@ class Animal {
     this._behavior++;
   }
 }
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, usesLitter) {
+    super(name);
+    this._usesLitter = usesLitter;
+  }
+}
+
+const catFelix = new Cat("Felix", true);
+console.log(catFelix);
+catFelix.incrementBehavior();
+const catFelixBehavior = catFelix.behavior;
+console.log(catFelixBehavior);
+console.log(catFelix);
